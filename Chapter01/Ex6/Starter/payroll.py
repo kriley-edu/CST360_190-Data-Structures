@@ -2,7 +2,7 @@
 filename = input("Enter the file name: ")
 
 print("\nPayroll Report")
-print("{:<12} {:<12} {:<12}".format("Last Name:",
+print("{:<15} {:<15} {:<15}".format("Last Name:",
             "Hours Worked:",
             "Wages Paid:"))
 
@@ -16,6 +16,6 @@ with open(filename, "r") as file:
 
         wages_paid = hourly_wage * hours_worked
 
-        print("{:<12} {:<12.2f} ${:<11.2f}".format( last_name,
+        print("{:<15} {:<15.2f} ${:<14.2f}".format( last_name,
             hours_worked,
             wages_paid))
