@@ -2,18 +2,16 @@
 import math
 
 def main():
-    radius = float(input("Enter the radius of the sphere: "))
+radius = float(input("Enter the radius of the sphere: "))
+diameter = radius * 2
+circumference = 2 * math.pi *radius
+surface_area = 4 * math.pi * radius ** 2
+volume = (4 / 3) * math.pi * radius ** 3
 
-    diameter = 2 * radius
-    circumference = 2 * math.pi * radius
-    surface_area = 4 * math.pi * radius ** 2
-    volume = (4 / 3) * math.pi * radius ** 3
-
-    print(f"\nDiameter: {diameter:.2f}")
-    print(f"Circumference: {circumference:.2f}")
-    print(f"Surface Area: {surface_area:.2f}")
-    print(f"Volume: {volume:.2f}")
-
+print("The diameter is ", diameter)
+print("The circumference is ", circumference)
+print("The surface area is ", surface_area)
+print("The volume is ", volume)
 
 if __name__ == "__main__":
-    main()
+    main() 
