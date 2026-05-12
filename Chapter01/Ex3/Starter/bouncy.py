@@ -16,7 +16,7 @@ def main():
         down = up
         up = down * index        
 
-    print(f"\nTotal distance traveled: {total_distance:.2f} feet")
+    print(f"\nTotal distance traveled: {total_distance:.1f} feet")
 
 if __name__ == "__main__":
     main()
